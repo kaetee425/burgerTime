@@ -1,4 +1,70 @@
-body {
-	color: pink;
-	background-color: grey;
+ body {
+ 	width: 75%;
+	margin: 0 50px; 
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	background-color: pink;
+ }
+
+ #burgericon {
+ 	display: block;
+    margin: auto;
+ }
+
+ h1 {
+ 	text-align: center;
+ 	font-family: 'Fontdiner Swanky', cursive;
+ 	font-size: 65px;
+ 	margin: 50px;
+ }
+
+ .goodBurger {
+ 	font-family: 'Crafty Girls', cursive;
+ 	font-weight: normal;
+ 	font-size: 20px;
+ 	text-align: center;
+
+ 	border-radius: 25px;
+ 	width: 100%;
+ 	margin: 10px;
+ 	padding: 10px;
+ 	background-color: #b7ffc2;
+ 	border: none;
+ }
+
+ .goodBurger:hover {
+ 	background-color: #81ff94;
+ }
+
+ .badBurger {
+ 	font-family: 'Crafty Girls', cursive;
+ 	font-weight: normal;
+ 	font-size: 20px;
+ 	text-align: center;
+
+ 	border-radius: 25px;
+ 	margin: 10px;
+ 	padding: 10px;
+ 	background-color: #ffd1c9;
+ }
+
+ .addBurger{
+ 	font-family: 'Crafty Girls', cursive;
+ 	font-weight: normal;
+ 	font-size: 20px;
+ 	text-align: center;
+
+ 	border-radius: 25px;
+ 	width: 100%;
+ 	margin: 0;
+ 	padding: 10px;
+ 	background-color: #FFC04C;
+ 	border: none;
+ }
+
+.addBurger:active {
+	background-color: #FFC04C;
 }
+
+
