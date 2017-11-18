@@ -1,0 +1,4 @@
+INSERT INTO burgers (burger_name) VALUES ("PIGGY DELUX O'RANCHO SUPREME");
+INSERT INTO burgers (burger_name) VALUES ("GROOT SUPREME SPACE INVADER");
+INSERT INTO burgers (burger_name) VALUES ("HAPPY COW BURGER");
+INSERT INTO burgers (burger_name) VALUES ("PUFFY MAC COW JR");
