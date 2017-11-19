@@ -1,5 +1,6 @@
-$(function(){
-	$(".submit-btn").on("click", function(event){
+$(document).ready(function(){
+	$(".addBurger").on("click", function(event){
+		console.log("something")
 		event.preventDefault();
 
 		var newBurger = {
@@ -14,4 +15,17 @@ $(function(){
 			location.reload();
 		});
 	});
+
+	$(".eatMe-btn").on("click", function(event){
+		console.log("something")
+		event.preventDefault();
+
+		 
+		$.ajax("/api/burgers/" + $(this).attr("data-id"), {
+			type: "PUT"
+		}).then(function(){
+			console.log("EATEN")
+			location.reload();
+		})
+	})
 });

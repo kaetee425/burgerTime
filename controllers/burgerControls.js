@@ -2,7 +2,6 @@ var express = require("express");
 
 var app = express.Router();
 //router() --> case sensitive does not matter
-
 var burger = require("../model/burger.js");
 
 app.get("/", function(req, res){
@@ -16,19 +15,19 @@ app.get("/", function(req, res){
 });
 
 app.post("/api/burgers", function(req, res){
-	burger.insertOne(["burger_name"], [req.body.burger_name], function(result){
+	burger.insertOne(["burger_name"], [req.body.name], function(result){
 		res.redirect("/");
 	});
 });
 
 app.put("/api/burgers/:id", function(req, res){
-	var condittion = "id = " + req.params.id;
+	var condition = "id = " + req.params.id;
 
 	console.log("condition", condition);
 
 	burger.updateOne({devoured: true}, condition, function(result){
-		res.redirect("/")
-	});
+		res.send(result);
+	})
 });
 
 
