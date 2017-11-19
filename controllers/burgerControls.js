@@ -27,7 +27,7 @@ app.put("/api/burgers/:id", function(req, res){
 
 	burger.updateOne({devoured: true}, condition, function(result){
 		res.send(result);
-	})
+	});
 });
 
 
